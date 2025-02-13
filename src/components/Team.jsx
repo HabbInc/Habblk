@@ -25,13 +25,13 @@ const teamMembers = [
   {
     name: "Sanjeev Vijayaratnam",
     role: "Co-Founder & Managing Director",
-    image: assets.kajanthan,
+    image: assets.sanje,
     linkedin: "#",
   },
   {
     name: "Thanushan Vijayaratnam",
     role: "Co-Founder",
-    image: assets.vithu,
+    image: assets.thanu,
     linkedin: "#",
   },
   {
@@ -43,13 +43,13 @@ const teamMembers = [
   {
     name: "Ulageeswaran Kajanthan",
     role: "Software Engineering Intern",
-    image: assets.thanu,
+    image: assets.kajanthan,
     linkedin: "#",
   },
   {
     name: "Vithusa Pathmanathan",
     role: "Frontend Developer Intern",
-    image: assets.kajanthan,
+    image: assets.vithu,
     linkedin: "#",
   },
 ];
