@@ -1,5 +1,6 @@
 import React from "react";
-import { assets } from "src/assets/assets";
+import { assets } from "../assets/assets";
+
 // import Teams from "../assets/assets.js"; // Ensure assets.js has correct exports
 
 const teamMembers = [
