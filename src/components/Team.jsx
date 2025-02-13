@@ -1,53 +1,54 @@
 import React from "react";
-import Teams from "../assets/assets.js"; // Ensure assets.js has correct exports
+import { assets } from "src/assets/assets";
+// import Teams from "../assets/assets.js"; // Ensure assets.js has correct exports
 
 const teamMembers = [
   {
     name: "Thenujan Amirthanathan",
     role: "Co-Founder & Lead Engineer",
-    image: Teams.member1,
+    image: assets.thenu,
     linkedin: "#",
   },
   {
     name: "Thulaxan Uthayakumar",
     role: "Co-Founder & Full Stack Developer",
-    image: Teams.member2,
+    image: assets.thulaxan,
     linkedin: "#",
   },
   {
     name: "Senthalan Vyravanathan",
     role: "Co-Founder & Software Engineer",
-    image: Teams.member3,
+    image: assets.sentha,
     linkedin: "#",
   },
   {
     name: "Sanjeev Vijayaratnam",
     role: "Co-Founder & Managing Director",
-    image: Teams.member4,
+    image: assets.kajanthan,
     linkedin: "#",
   },
   {
     name: "Thanushan Vijayaratnam",
     role: "Co-Founder",
-    image: Teams.member5,
+    image: assets.vithu,
     linkedin: "#",
   },
   {
     name: "Raj Puvan",
     role: "Mentor",
-    image: Teams.member6,
+    image: assets.raj,
     linkedin: "#",
   },
   {
     name: "Ulageeswaran Kajanthan",
     role: "Software Engineering Intern",
-    image: Teams.member7,
+    image: assets.thanu,
     linkedin: "#",
   },
   {
     name: "Vithusa Pathmanathan",
     role: "Frontend Developer Intern",
-    image: Teams.member8,
+    image: assets.kajanthan,
     linkedin: "#",
   },
 ];
