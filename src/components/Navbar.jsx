@@ -61,9 +61,9 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <button className="bg-primary text-white px-5 py-2 rounded-md font-semibold hover:bg-opacity-90">
+        <a href="/#contact" className="bg-primary text-white px-5 py-2 rounded-md font-semibold hover:bg-opacity-90">
           Let's Talk
-        </button>
+        </a>
       </div>
 
       {/* Mobile Menu Button */}
@@ -108,10 +108,10 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-
-        <button className="bg-primary text-white px-5 py-2 rounded-md font-semibold hover:bg-opacity-90 mt-4">
+        
+        <a href="/#contact" className="bg-primary text-white px-5 py-2 rounded-md font-semibold hover:bg-opacity-90">
           Let's Talk
-        </button>
+        </a>
       </div>
     </nav>
   );
