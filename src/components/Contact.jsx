@@ -47,18 +47,18 @@ const ContactUs = () => {
                 {
                   icon: "mdi:phone",
                   label: "Contact Phone",
-                  value: "+94 765 369 064",
+                  value: "+94 701 111 484",
                 },
                 {
                   icon: "mdi:email",
                   label: "Contact Mail",
-                  value: "senthvyra@gmail.com",
+                  value: "habblanka@gmail.com",
                 },
                 {
                   icon: "mdi:map-marker",
                   label: "Contact Location",
                   value:
-                    "Colombo, Western",
+                    "Colombo, Sri Lanka",
                 },
                 {
                   icon: "mdi:clock-time-four",
