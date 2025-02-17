@@ -6,7 +6,7 @@ const testimonials = [
   {
     id: 1,
     name: "HiTech Creations",
-    image: assets.hitech,
+    image: "/hitech.png",
     rating: 5,
     review:
       "HABB revolutionized our operations with their AI-driven solutions, enhancing efficiency, streamlining processes, and boosting productivity. Their innovative approach has made a significant impact on our business, allowing us to make smarter, faster decisions.",
@@ -14,7 +14,7 @@ const testimonials = [
   {
     id: 2,
     name: "Multivisa Service, Canada",
-    image:assets.multivisa,
+    image:"/multivisa.png",
     rating: 5,
     review:
       "HABB provided top-notch IT support services, ensuring our systems run smoothly with minimal downtime. Their proactive troubleshooting and quick response have greatly improved operational efficiency.",
@@ -22,7 +22,7 @@ const testimonials = [
   {
     id: 3,
     name: "tharaa.ch",
-    image: assets.tharaa,
+    image: "/tharaa.png",
     rating: 5,
     review:
       "The team at HABB delivers outstanding web and mobile applications, perfectly aligned with our vision. Their attention to detail and seamless execution has significantly enhanced our user experience.",
@@ -30,7 +30,7 @@ const testimonials = [
   {
     id: 4,
     name: "Karunya Sarees",
-    image:assets.karunya,
+    image:"/karunya.png",
     rating: 5,
     review:
       "HABB designed a stunning and user-friendly e-commerce platform for us. Our customers love the seamless shopping experience! The platform's smooth navigation and fast performance have helped increase customer satisfaction and sales",
