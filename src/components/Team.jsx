@@ -6,31 +6,31 @@ import { assets } from "../assets/assets";
 const teamMembers = [
   {
     name: "Thenujan Amirthanathan",
-    role: "Co-Founder & Lead Engineer",
+    role: "Managing Director",
     image: assets.thenu,
     linkedin: "#",
   },
   {
     name: "Thulaxan Uthayakumar",
-    role: "Co-Founder & Full Stack Developer",
+    role: "Full Stack Developer",
     image: assets.thulaxan,
     linkedin: "#",
   },
   {
     name: "Senthalan Vyravanathan",
-    role: "Co-Founder & Software Engineer",
+    role: "Software Engineer",
     image: assets.sentha,
     linkedin: "#",
   },
   {
     name: "Sanjeev Vijayaratnam",
-    role: "Co-Founder & Managing Director",
+    role: "UI/UX Designer",
     image: assets.sanje,
     linkedin: "#",
   },
   {
     name: "Thanushan Vijayaratnam",
-    role: "Co-Founder",
+    role: "DevOps Engineer",
     image: assets.thanu,
     linkedin: "#",
   },

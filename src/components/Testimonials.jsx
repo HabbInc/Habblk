@@ -1,11 +1,12 @@
 import { useState } from "react";
 import { FaStar } from "react-icons/fa";
+import { assets } from "../assets/assets";
 
 const testimonials = [
   {
     id: 1,
     name: "HiTech Creations",
-    image: "https://www.seekpng.com/png/full/11-110642_technology-png.png",
+    image: assets.hitech,
     rating: 5,
     review:
       "HABB revolutionized our operations with their AI-driven solutions, enhancing efficiency, streamlining processes, and boosting productivity. Their innovative approach has made a significant impact on our business, allowing us to make smarter, faster decisions.",
@@ -13,17 +14,15 @@ const testimonials = [
   {
     id: 2,
     name: "Multivisa Service, Canada",
-    image:
-      "https://png.pngtree.com/png-vector/20220816/ourmid/pngtree-visa-application-stamp-application-visa-grunge-vector-png-image_9046918.png",
+    image:assets.multivisa,
     rating: 5,
     review:
       "HABB provided top-notch IT support services, ensuring our systems run smoothly with minimal downtime. Their proactive troubleshooting and quick response have greatly improved operational efficiency.",
   },
   {
     id: 3,
-    name: "Senth Inc",
-    image:
-      "https://gamepedia.cursecdn.com/fortnite_esports_gamepedia_en/8/80/Senth.png",
+    name: "tharaa.ch",
+    image: assets.tharaa,
     rating: 5,
     review:
       "The team at HABB delivers outstanding web and mobile applications, perfectly aligned with our vision. Their attention to detail and seamless execution has significantly enhanced our user experience.",
@@ -31,8 +30,7 @@ const testimonials = [
   {
     id: 4,
     name: "Karunya Sarees",
-    image:
-      "https://pngmark.com/wp-content/uploads/2023/02/Shree-Ram-png-image.png",
+    image:assets.karunya,
     rating: 5,
     review:
       "HABB designed a stunning and user-friendly e-commerce platform for us. Our customers love the seamless shopping experience! The platform's smooth navigation and fast performance have helped increase customer satisfaction and sales",
