@@ -1,11 +1,10 @@
-import React from "react";
 import {
-  FaLinkedinIn,
+  FaEnvelope,
   FaFacebookF,
   FaInstagram,
-  FaEnvelope,
+  FaLinkedinIn,
+  FaTwitter,
 } from "react-icons/fa";
-import { BiLogoBehance } from "react-icons/bi";
 
 const Footer = () => {
   return (
@@ -22,25 +21,25 @@ const Footer = () => {
         {/* Social Icons */}
         <div className="flex space-x-4 mt-4 md:mt-0">
           <a
-            href="#"
+            href="https://www.linkedin.com/company/habbinc"
             className="p-2 rounded-lg bg-[#1E293B] hover:bg-primary transition"
           >
             <FaLinkedinIn className="text-white text-lg" />
           </a>
           <a
-            href="#"
+            href="https://www.twitter.com/habb_inc"
             className="p-2 rounded-lg bg-[#1E293B] hover:bg-primary transition"
           >
-            <BiLogoBehance className="text-white text-lg" />
+            <FaTwitter className="text-white text-lg" />
           </a>
           <a
-            href="#"
+            href="https://www.facebook.com/habbinc"
             className="p-2 rounded-lg bg-[#1E293B] hover:bg-primary transition"
           >
             <FaFacebookF className="text-white text-lg" />
           </a>
           <a
-            href="#"
+            href="https://www.instagram.com/habb_inc"
             className="p-2 rounded-lg bg-[#1E293B] hover:bg-primary transition"
           >
             <FaInstagram className="text-white text-lg" />

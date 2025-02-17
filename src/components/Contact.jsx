@@ -58,12 +58,12 @@ const ContactUs = () => {
                   icon: "mdi:map-marker",
                   label: "Contact Location",
                   value:
-                    "11, Ward No-4, Puthukudiyiruppu,\nMullaitivu, Sri Lanka",
+                    "Colombo, Western",
                 },
                 {
                   icon: "mdi:clock-time-four",
                   label: "Office Time",
-                  value: "Mon-Fri: 7:00 - 22:00\nSat-Sun: 9:00 - 20:00",
+                  value: "Mon-Fri: 9:00 - 17:00\nSat-Sun: 9:00 - 15:00",
                 },
               ].map((item, index) => (
                 <div
