@@ -33,7 +33,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-screen fixed left-0 top-0 flex justify-between items-center px-6 md:px-20 py-4 bg-white shadow-md z-50">
-      {/* Logo */}
+      {        <img src="/habbpr.jpg" alt="HABB Logo" className="h-10 md:h-12" />}
       <h1 className="text-xl md:text-2xl font-bold text-primary">
         WELCOME TO HABB!
       </h1>

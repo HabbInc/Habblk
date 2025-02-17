@@ -42,13 +42,13 @@ const teamMembers = [
   },
   {
     name: "Ulageeswaran Kajanthan",
-    role: "Software Engineering Intern",
+    role: "Intern Software Engineer",
     image: assets.kajanthan,
     linkedin: "http://linkedin.com/in/kajanthu7",
   },
   {
     name: "Vithusa Pathmanathan",
-    role: "Frontend Developer Intern",
+    role: "Intern Frontend Developer",
     image: assets.vithu,
     linkedin: "http://linkedin.com/in/vithusha-pathmanathan-8b356828a",
   },
