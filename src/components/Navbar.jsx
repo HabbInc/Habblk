@@ -33,48 +33,49 @@ const Navbar = () => {
 
   return (
     <nav className="w-screen fixed left-0 top-0 flex justify-between items-center px-6 md:px-20 py-4 bg-white shadow-md z-50">
-      {        <img src="/habbpr.jpg" alt="HABB Logo" className="h-10 md:h-12" />}
+      {/* ✅ Fixed Logo */}
+      <img src="/habbpr.jpg" alt="HABB Logo" className="h-10 md:h-12" />
+
       <h1 className="text-xl md:text-2xl font-bold text-primary">
         WELCOME TO HABB!
       </h1>
 
-      {/* Desktop Navigation */}
+      {/* ✅ Desktop Navigation */}
       <div className="hidden md:flex items-center space-x-6">
         <ul className="flex space-x-6 text-gray-800 font-medium">
-          {[
-            "Features",
-            "About",
-            "Services",
-            "Testimonials",
-            "Team",
-            "Contact",
-          ].map((name, index) => (
-            <li key={index} className="relative group cursor-pointer">
-              <a
-                href={`#${name.toLowerCase()}`}
-                className="hover:text-primary relative"
-              >
-                {name}
-                <span className="absolute left-0 bottom-[-8px] w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-              </a>
-            </li>
-          ))}
+          {["Features", "About", "Services", "Blogs", "Team", "Contact"].map(
+            (name, index) => (
+              <li key={index} className="relative group cursor-pointer">
+                <a
+                  href={`#${name.toLowerCase()}`}
+                  className="hover:text-primary relative"
+                >
+                  {name}
+                  <span className="absolute left-0 bottom-[-8px] w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                </a>
+              </li>
+            )
+          )}
         </ul>
 
-        <a href="/#contact" className="bg-primary text-white px-5 py-2 rounded-md font-semibold hover:bg-opacity-90">
+        <a
+          href="/#contact"
+          className="bg-primary text-white px-5 py-2 rounded-md font-semibold hover:bg-opacity-90"
+        >
           Let's Talk
         </a>
       </div>
 
-      {/* Mobile Menu Button */}
+      {/* ✅ Mobile Menu Button */}
       <div className="md:hidden">
         <FaBars
           className="text-2xl cursor-pointer"
           onClick={() => setMenuOpen(true)}
+          aria-label="Open Menu"
         />
       </div>
 
-      {/* Mobile Menu */}
+      {/* ✅ Mobile Menu */}
       <div
         ref={sideMenuRef}
         className={`fixed top-0 right-0 h-screen w-64 bg-white shadow-lg flex flex-col gap-6 py-20 px-10 transition-transform duration-300 ease-in-out overflow-y-auto ${
@@ -85,31 +86,30 @@ const Navbar = () => {
         <FaTimes
           className="absolute right-6 top-6 text-2xl cursor-pointer"
           onClick={closeMenu}
+          aria-label="Close Menu"
         />
 
         <ul className="flex flex-col gap-4">
-          {[
-            "Features",
-            "About",
-            "Services",
-            "Testimonials",
-            "Team",
-            "Contact",
-          ].map((name, index) => (
-            <li key={index} className="list-none">
-              <a
-                className="relative text-lg font-medium block pb-1 hover:text-primary group"
-                onClick={closeMenu}
-                href={`#${name.toLowerCase()}`}
-              >
-                {name}
-                <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-              </a>
-            </li>
-          ))}
+          {["Features", "About", "Services", "Blogs", "Team", "Contact"].map(
+            (name, index) => (
+              <li key={index} className="list-none">
+                <a
+                  className="relative text-lg font-medium block pb-1 hover:text-primary group"
+                  onClick={closeMenu}
+                  href={`#${name.toLowerCase()}`}
+                >
+                  {name}
+                  <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                </a>
+              </li>
+            )
+          )}
         </ul>
-        
-        <a href="/#contact" className="bg-primary text-white px-5 py-2 rounded-md font-semibold hover:bg-opacity-90">
+
+        <a
+          href="/#contact"
+          className="bg-primary text-white px-5 py-2 rounded-md font-semibold hover:bg-opacity-90"
+        >
           Let's Talk
         </a>
       </div>

@@ -1,61 +1,57 @@
-import React from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import Features from "./components/Features";
 import About from "./components/About";
-import Services from "./components/Services";
-import Testimonials from "./components/Testimonials";
-import Team from "./components/Team";
+import Blogs from "./components/Blogs"; // Fixed: Using correct component
 import Contact from "./components/Contact";
+import Features from "./components/Features";
 import Footer from "./components/Footer";
-
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import Services from "./components/Services";
+import Team from "./components/Team";
+import Testimonials from "./components/Testimonials";
 
 const App = () => {
   return (
-    <div >
+    <div>
       <ToastContainer />
       <Navbar />
-      <Header /> 
-      
-    
-      <div >
-        <Section id="features" title="Features">
-          <Features /> 
+      <Header />
+
+      <div>
+        <Section id="features">
+          <Features />
         </Section>
-        <Section id="About" title="about">
+        <Section id="about">
           <About />
         </Section>
-        <Section id="services" title="Services" >
-          <Services/>
+        <Section id="services">
+          <Services />
         </Section>
-        <Section id="testimonials" title="Testimonials" >
-          <Testimonials/>
-          </Section>
-       
-        <Section id="team" title="Team" >
-          <Team/>
+        <Section id="blogs">
+          <Blogs /> {/* Fixed: Now rendering the Blogs component */}
         </Section>
-        <Section id="contact" title="Contact" >
-          <Contact/>
+        <Section id="testimonials">
+          <Testimonials />
+        </Section>
+        <Section id="team">
+          <Team />
+        </Section>
+        <Section id="contact">
+          <Contact />
         </Section>
       </div>
-      <Footer/>
+
+      <Footer />
     </div>
   );
 };
 
-
+// Section Wrapper Component
 const Section = ({ id, children }) => {
   return (
-    <section
-      id={id}
-      className="flex items-center justify-center bg-gray-150 my-10" 
-    >
-      <div className="w-full px-4"> 
-        {children} 
-      </div>
+    <section id={id} className="flex items-center justify-center bg-gray-150 my-10">
+      <div className="w-full px-4">{children}</div>
     </section>
   );
 };
