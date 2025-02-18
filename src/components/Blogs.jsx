@@ -31,6 +31,13 @@ const events = [
     image: "/north2.jpg",
     link: "https://g.co/kgs/W1ugHxc",
   },
+  {
+    title: "HABB Inc 🚀",
+    description:
+      "Go Beyond!",
+    image: "/habb1.png",
+    link: "https://www.habb.lk",
+  },
 ];
 
 const EventsBlogs = () => {
