@@ -4,8 +4,7 @@ import { assets } from "../assets/assets";
 const images = [
   { src: assets.about, name: "HABB Launched!" },
   { src: "/sliit0.jpg", name: "HABB at SLIIT" },
-  { src: "/north44
-    .jpg", name: "HABB at Northern Uni" },
+  { src: "/north44.jpg", name: "HABB at Northern Uni" },
   { src: "/north11.jpg", name: "HABB at Northern Uni" },
 ];
 
