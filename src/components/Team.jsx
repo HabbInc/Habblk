@@ -50,6 +50,12 @@ const teamMembers = [
     image: assets.vithu,
     linkedin: "http://linkedin.com/in/vithusha-pathmanathan-8b356828a",
   },
+  {
+    name: "Nipuni Bandara",
+    role: "Intern Software Engineer",
+    image: "/nipuni.png",
+    linkedin: "https://www.linkedin.com/in/nipuni-bandara-a84588277",
+  },
 ];
 
 const Team = () => {
