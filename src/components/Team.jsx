@@ -80,45 +80,54 @@ const Team = () => {
       <p className="text-gray-600 text-lg max-w-2xl mx-auto mb-8">
         Meet our talented professionals dedicated to bringing innovative solutions.
       </p>
-      <div className="relative w-full max-w-4xl mx-auto flex items-center justify-center">
+      <div className="relative w-full max-w-3xl mx-auto flex items-center justify-center">
         <button
           onClick={prevMember}
           className="absolute left-0 p-2 bg-gray-200 rounded-full hover:bg-gray-300 hidden md:block"
         >
           ◀
         </button>
-        <div className="flex w-full justify-center items-center">
-          {[currentIndex - 1, currentIndex, currentIndex + 1].map((index) => {
-            const memberIndex = (index + teamMembers.length) % teamMembers.length;
-            return (
-              <div key={memberIndex} className="w-1/3 p-4 flex flex-col items-center">
-                <div className="w-48 h-48 flex items-center justify-center bg-blue-50 rounded-lg">
-                  <img
-                    src={teamMembers[memberIndex].image}
-                    alt={teamMembers[memberIndex].name}
-                    className="w-full h-full object-contain"
-                  />
-                </div>
-                <h3 className="text-lg font-bold text-gray-900 mt-4">
-                  {teamMembers[memberIndex].name}
-                </h3>
-                <p className="text-gray-700 text-sm">{teamMembers[memberIndex].role}</p>
-                <a
-                  href={teamMembers[memberIndex].linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-2 inline-flex items-center text-primary font-semibold hover:underline"
-                >
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
-                    alt="LinkedIn"
-                    className="w-5 h-5 mr-1"
-                  />
-                  LinkedIn
-                </a>
-              </div>
-            );
-          })}
+        <div className="flex w-full justify-center items-center overflow-hidden">
+          <div className="hidden md:flex items-center w-1/4 opacity-50">
+            <img
+              src={teamMembers[(currentIndex - 1 + teamMembers.length) % teamMembers.length].image}
+              alt={teamMembers[(currentIndex - 1 + teamMembers.length) % teamMembers.length].name}
+              className="w-32 h-32 rounded-lg object-contain"
+            />
+          </div>
+          <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center transition-all duration-500 ease-in-out w-1/2">
+            <div className="w-64 h-64 flex items-center justify-center bg-blue-50">
+              <img
+                src={teamMembers[currentIndex].image}
+                alt={teamMembers[currentIndex].name}
+                className="w-full h-full object-contain"
+              />
+            </div>
+            <h3 className="text-xl font-bold text-gray-900 mt-4">
+              {teamMembers[currentIndex].name}
+            </h3>
+            <p className="text-gray-700 text-sm">{teamMembers[currentIndex].role}</p>
+            <a
+              href={teamMembers[currentIndex].linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex items-center text-primary font-semibold hover:underline"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+                alt="LinkedIn"
+                className="w-6 h-6 mr-2"
+              />
+              LinkedIn Profile
+            </a>
+          </div>
+          <div className="hidden md:flex items-center w-1/4 opacity-50">
+            <img
+              src={teamMembers[(currentIndex + 1) % teamMembers.length].image}
+              alt={teamMembers[(currentIndex + 1) % teamMembers.length].name}
+              className="w-32 h-32 rounded-lg object-contain"
+            />
+          </div>
         </div>
         <button
           onClick={nextMember}
