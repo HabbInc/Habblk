@@ -4,32 +4,32 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 // Event & Blog Data
 const events = [
   {
-    title: "HABB Launch Event",
+    title: "Exciting Beginnings! 🚀",
     description:
-      "Celebrating the grand launch of HABB (PVT) LTD, bringing innovation in software solutions.",
+      "We are thrilled to announce the initiation of HABB Software Company! Our journey began with an insightful mentorship session with Ms. Jenny Krishara (Senior Lecturer, SLIIT) and Ms. Vethurja Kugathasan (Instructor, Faculty of Computing | IT, SLIIT) and our crew Thanushan Vijayaratnam, Thenujan Amirthanathan, Thulaxan Uthayakumar & Senthalan Vyravanathan!",
     image: "/sliit1.jpg",
-    link: "https://habb.lk/launch",
+    link: "https://www.linkedin.com/company/habbinc",
   },
   {
-    title: "Tech Meetup 2025",
+    title: "Exciting times ahead! 🚀",
     description:
-      "An insightful meetup with tech enthusiasts discussing AI, cybersecurity, and cloud computing.",
+      "Today, we had the opportunity to visit Northern Uni and share our vision for HABB. We discussed our plans, innovations, and the impact we aim to create in the tech industry. Connecting with aspiring minds and exchanging ideas was truly inspiring!",
     image: "/north1.jpg",
-    link: "https://habb.lk/meetup",
+    link: "https://www.facebook.com/habbinc",
   },
   {
-    title: "Startup Pitch Fest",
+    title: "Building Our Future! 🚀",
     description:
-      "Showcasing emerging startups and groundbreaking ideas in the tech industry.",
+      "Their valuable guidance and expertise have set the foundation for our vision, and we are eager to embark on this entrepreneurial adventure. Stay tuned for more updates as we shape the future of HABB!",
     image: "/sliit2.jpg",
-    link: "https://habb.lk/startup-pitch",
+    link: "https://www.instagram.com/habb_inc",
   },
   {
-    title: "Cybersecurity Workshop",
+    title: "Inspiring Collaboration! 🚀",
     description:
-      "An interactive workshop on securing digital assets and preventing cyber threats.",
+      "Looking forward to more collaborations and growth as we continue our journey. The exchange of ideas at Northern Uni was invaluable, and we are excited for what’s next!",
     image: "/north2.jpg",
-    link: "https://habb.lk/cybersecurity-workshop",
+    link: "https://g.co/kgs/W1ugHxc",
   },
 ];
 
