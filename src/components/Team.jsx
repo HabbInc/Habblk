@@ -1,7 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { assets } from "../assets/assets";
-
-// import Teams from "../assets/assets.js"; // Ensure assets.js has correct exports
 
 const teamMembers = [
   {
@@ -55,61 +53,72 @@ const teamMembers = [
 ];
 
 const Team = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % teamMembers.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const nextMember = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % teamMembers.length);
+  };
+
+  const prevMember = () => {
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + teamMembers.length) % teamMembers.length
+    );
+  };
+
   return (
-    <section id="team" className="py-12 ">
-      {/* Header */}
-      <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-gray-900 inline-block border-b-4 border-primary">
-          Our Team
-        </h2>
-        <p className="text-gray-600 mt-3 text-lg max-w-2xl mx-auto">
-          Meet our talented professionals dedicated to bringing innovative
-          solutions.
-        </p>
-      </div>
-
-      {/* Team Grid */}
-      <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
-          {teamMembers.map((member, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-xl shadow-md overflow-hidden flex flex-col items-center p-6"
-            >
-              {/* Image Section (Square, Visible, Centered) */}
-              <div className="w-64 h-64 flex items-center justify-center bg-blue-50">
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="w-full h-full object-contain"
-                />
-              </div>
-
-              {/* Content Section */}
-              <div className="text-center mt-4">
-                <h3 className="text-xl font-bold text-gray-900">
-                  {member.name}
-                </h3>
-                <p className="text-gray-700 text-sm mt-1">{member.role}</p>
-
-                {/* LinkedIn Profile (Below Everything) */}
-                <a
-                  href={member.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-4 inline-flex items-center text-primary font-semibold hover:underline"
-                >
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
-                    alt="LinkedIn"
-                    className="w-6 h-6 mr-2"
-                  />
-                  LinkedIn Profile
-                </a>
-              </div>
-            </div>
-          ))}
+    <section id="team" className="py-12 text-center">
+      <h2 className="text-4xl font-bold text-gray-900 border-b-4 border-primary inline-block mb-6">
+        Our Team
+      </h2>
+      <p className="text-gray-600 text-lg max-w-2xl mx-auto mb-8">
+        Meet our talented professionals dedicated to bringing innovative solutions.
+      </p>
+      <div className="relative w-full max-w-md mx-auto">
+        <div className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center transition-all duration-500 ease-in-out">
+          <div className="w-64 h-64 flex items-center justify-center bg-blue-50">
+            <img
+              src={teamMembers[currentIndex].image}
+              alt={teamMembers[currentIndex].name}
+              className="w-full h-full object-contain"
+            />
+          </div>
+          <h3 className="text-xl font-bold text-gray-900 mt-4">
+            {teamMembers[currentIndex].name}
+          </h3>
+          <p className="text-gray-700 text-sm">{teamMembers[currentIndex].role}</p>
+          <a
+            href={teamMembers[currentIndex].linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-flex items-center text-primary font-semibold hover:underline"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
+              alt="LinkedIn"
+              className="w-6 h-6 mr-2"
+            />
+            LinkedIn Profile
+          </a>
         </div>
+        <button
+          onClick={prevMember}
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-200 rounded-full hover:bg-gray-300"
+        >
+          ◀
+        </button>
+        <button
+          onClick={nextMember}
+          className="absolute right-0 top-1/2 transform -translate-y-1/2 p-2 bg-gray-200 rounded-full hover:bg-gray-300"
+        >
+          ▶
+        </button>
       </div>
     </section>
   );
