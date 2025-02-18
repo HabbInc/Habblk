@@ -32,11 +32,11 @@ const ContactUs = () => {
       <div className="w-full max-w-7xl flex flex-wrap">
         {/* Contact Info Section */}
         <div className="w-full lg:w-2/3 p-6">
-          <div className="bg-white p-10 rounded-lg">
-            <h3 className="text-lg font-semibold  uppercase text-gray-900 inline-block border-b-4 border-primary">
+          <div className="bg-white p-6 md:p-10 rounded-lg">
+            <h3 className="text-lg font-semibold uppercase text-gray-900 inline-block border-b-4 border-primary">
               Contact Us
             </h3>
-            <h5 className="text-5xl font-bold text-gray-900 leading-tight mt-2">
+            <h5 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight mt-2">
               Our creative design solutions are for people. Contact Our Office.
             </h5>
 
@@ -55,8 +55,7 @@ const ContactUs = () => {
                 {
                   icon: "mdi:map-marker",
                   label: "Contact Location",
-                  value:
-                    "Colombo, Sri Lanka",
+                  value: "Colombo, Sri Lanka",
                 },
                 {
                   icon: "mdi:clock-time-four",
@@ -87,7 +86,7 @@ const ContactUs = () => {
 
         {/* Contact Form Section */}
         <div className="w-full lg:w-1/3 p-6">
-          <div className="bg-gray-50 p-10 shadow-lg rounded-lg">
+          <div className="bg-gray-50 p-6 md:p-10 shadow-lg rounded-lg">
             <h4 className="text-2xl font-semibold text-gray-800 mb-4">
               Get In Touch
             </h4>
