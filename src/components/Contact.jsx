@@ -36,11 +36,11 @@ const ContactUs = () => {
             <h3 className="text-lg font-semibold  uppercase text-gray-900 inline-block border-b-4 border-primary">
               Contact Us
             </h3>
-            <h2 className="text-5xl font-bold text-gray-900 leading-tight mt-2">
-              Our creative design <br />
-              solutions are for people. <br />
+            <h4 className="text-5xl font-bold text-gray-900 leading-tight mt-2">
+              Our creative design
+              solutions are for people. 
               Contact Our Office.
-            </h2>
+            </h4>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
               {[
