@@ -56,6 +56,12 @@ const teamMembers = [
     image: "/nipuni.png",
     linkedin: "https://www.linkedin.com/in/nipuni-bandara-a84588277",
   },
+  {
+    name: "Sarmitha Suntharamoorthy",
+    role: "Intern UI/UX Designer",
+    image: "/sarmitha.png",
+    linkedin: "https://www.linkedin.com/in/sarmitha-suntharamoorthy-9541402b7/",
+  },
 ];
 
 const Team = () => {
