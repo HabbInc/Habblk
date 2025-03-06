@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const events = [
@@ -21,10 +21,22 @@ const events = [
     link: "https://www.instagram.com/habb_inc",
   },
   {
+    title: "Team HABB at SLIIT! 🚀",
+    description: "A productive discussion at SLIIT on our projects and growth!",
+    image: "/sliitfeb3.jpg",
+    link: "https://www.linkedin.com/company/habbinc",
+  },
+  {
     title: "Building Our Future! 🚀",
     description: "Guidance & mentorship shaping our journey at HABB!",
     image: "/sliit2.jpg",
     link: "https://www.twitter.com/habb_inc",
+  },
+  {
+    title: "Team HABB at SLIIT! 🚀",
+    description: "A productive discussion at SLIIT on our projects and growth!",
+    image: "/sliitfeb4.1.jpg",
+    link: "https://www.linkedin.com/company/habbinc",
   },
   {
     title: "Inspiring Collaboration! 🚀",
