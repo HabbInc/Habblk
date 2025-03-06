@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { assets } from "../assets/assets";
+import { assets } from "../assets/assets"; // Make sure the path is correct
 
 const images = [
   { src: assets.about },
@@ -26,31 +26,30 @@ const AboutUs = () => {
 
   return (
     <div id="about" className="bg-[#0D1321] text-white px-6 py-24">
-      <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center min-h-[600px]">
+      <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center">
         
         {/* Left Image Slideshow Section */}
         <div className="md:w-1/2 flex flex-col justify-center items-center mb-8 md:mb-0">
-          <div className="relative w-full max-w-md">
+          <div className="w-full max-w-md relative pb-[133.33%]"> {/* 3:4 aspect ratio (height is 1.33 times width) */}
             <img
-              key={currentIndex}
               src={images[currentIndex].src}
-              alt={`Slide ${currentIndex}`}
-              className="rounded-lg shadow-lg w-full object-cover h-auto transition-opacity duration-500 opacity-100"
+              alt="Slideshow Image"
+              className="absolute top-0 left-0 w-full h-full object-contain rounded-lg shadow-lg"
             />
           </div>
         </div>
 
         {/* Right Text Section */}
         <div className="md:w-1/2">
-          <h2 className="text-4xl font-extrabold mb-6 relative inline-block">
+          <h2 className="text-4xl font-extrabold mb-4 relative inline-block">
             ABOUT US
             <span className="absolute left-0 bottom-0 w-full h-1 bg-primary"></span>
           </h2>
           <p className="text-lg text-gray-300 leading-relaxed mb-6">
-            Welcome to <span className="text-blue-400 font-bold">HABB</span>, where innovation meets technology. 
-            We are a cutting-edge software company dedicated to creating powerful, 
-            efficient, and user-friendly digital solutions. Our team of 
-            experienced developers and designers works closely with businesses 
+            Welcome to HABB, where innovation meets technology. We are a
+            cutting-edge software company dedicated to creating powerful,
+            efficient, and user-friendly digital solutions. Our team of
+            experienced developers and designers works closely with businesses
             to transform their ideas into reality.
           </p>
 
