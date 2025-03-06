@@ -2,11 +2,19 @@ import React, { useState, useEffect } from "react";
 import { assets } from "../assets/assets";
 
 const images = [
-  { src: assets.about, name: "HABB Launched!" },
-  { src: "/sliit0.jpg", name: "HABB at SLIIT" },
-  { src: "/north44.jpg", name: "HABB at Northern Uni" },
-  { src: "/north11.jpg", name: "HABB at Northern Uni" },
+  { src: assets.about },
+  { src: "/sliitfeb4.jpg" },
+  { src: "/sliitfeb1.jpg" },
+  { src: "/sliit0.jpg" },
+  { src: "/north11.jpg" },
+  { src: "/sliitfeb3.jpg" },
+  { src: "/sliitfeb2.jpg" },
+  { src: "/sliitfeb6.jpg" },
+  { src: "/north44.jpg" },
+  { src: "/sliitfeb5.jpg" },
+ 
 ];
+
 
 const AboutUs = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -24,11 +32,13 @@ const AboutUs = () => {
         
         {/* Left Image Slideshow Section */}
         <div className="md:w-1/2 flex flex-col justify-center items-center mb-8 md:mb-0">
-          <img
-            src={images[currentIndex].src}
-            alt={images[currentIndex].name}
-            className="rounded-lg shadow-lg w-full max-w-md object-cover h-auto transition-all duration-500"
-          />
+          <div className="w-full max-w-md relative pb-[133.33%]"> {/* 3:4 aspect ratio (height is 1.33 times width) */}
+            <img
+              src={images[currentIndex].src}
+              alt={images[currentIndex].name}
+              className="absolute top-0 left-0 w-full h-full object-contain rounded-lg shadow-lg"
+            />
+          </div>
           <p className="mt-2 text-sm text-gray-400">📷 {images[currentIndex].name}</p>
         </div>
 
