@@ -62,6 +62,12 @@ const teamMembers = [
     image: "/sarmitha.png",
     linkedin: "https://www.linkedin.com/in/sarmitha-suntharamoorthy-9541402b7/",
   },
+  {
+    name: "Shivaphiriyan Arumugathash",
+    role: "Intern Softeware Engineer",
+    image: "/shiva.png",
+    linkedin: "https://www.linkedin.com/in/shivaphiriyan/",
+  },
 ];
 
 const Team = () => {

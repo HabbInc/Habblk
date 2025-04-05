@@ -14,7 +14,7 @@ const textVariants = {
 
 const Header = () => {
   const text =
-    "Delivering  IT  Solutions  That  Enable  You  To  Work Smarter.";
+    "Delivering IT Solutions That Enable You To Work Smarter.";
 
   return (
     <section>
@@ -96,6 +96,22 @@ const Header = () => {
               >
                 <FaPlay />
               </motion.button>
+
+              {/* New POS Link with Blinking Effect */}
+              <motion.a
+                href="https://pos.habb.lk"
+                className="px-6 py-3 bg-red-500 text-white rounded-full font-semibold hover:bg-red-600 transition duration-300"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{
+                  opacity: { repeat: Infinity, repeatType: "reverse", duration: 1 },
+                }}
+              >
+                <span className="relative">
+                  New POS
+                  <span className="absolute top-0 right-0 text-xs bg-yellow-400 text-black rounded-full w-4 h-4 flex items-center justify-center animate-ping">!</span>
+                </span>
+              </motion.a>
             </div>
           </div>
 

@@ -45,7 +45,7 @@ const Footer = () => {
             <FaInstagram className="text-white text-lg" />
           </a>
           <a
-            href="mailto:your@email.com"
+            href="mailto:habblanka@gmail.com"
             className="p-2 rounded-lg bg-[#1E293B] hover:bg-primary transition"
           >
             <FaEnvelope className="text-white text-lg" />
