@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { assets } from "../assets/assets";
 
 const teamMembers = [
@@ -53,19 +54,19 @@ const teamMembers = [
   {
     name: "Nipuni Bandara",
     role: "Intern Software Engineer",
-    image: "/nipuni.png",
+    image: assets.nipuni,
     linkedin: "https://www.linkedin.com/in/nipuni-bandara-a84588277",
   },
   {
     name: "Sarmitha Suntharamoorthy",
     role: "Intern UI/UX Designer",
-    image: "/sarmitha.png",
+    image: assets.sarmitha,
     linkedin: "https://www.linkedin.com/in/sarmitha-suntharamoorthy-9541402b7/",
   },
   {
     name: "Shivaphiriyan Arumugathash",
     role: "Intern Softeware Engineer",
-    image: "/shiva.png",
+    image: assets.shiva,
     linkedin: "https://www.linkedin.com/in/shivaphiriyan/",
   },
 ];
@@ -102,8 +103,9 @@ const Team = () => {
         <button
           onClick={prevMember}
           className="absolute left-0 p-2 bg-gray-200 rounded-full hover:bg-gray-300 hidden md:block"
+          aria-label="Previous Team Member"
         >
-          ◀
+          <FaChevronLeft />
         </button>
         <div className="flex w-full justify-center items-center overflow-hidden">
           <div className="hidden md:flex items-center w-1/4 opacity-50">
@@ -150,8 +152,9 @@ const Team = () => {
         <button
           onClick={nextMember}
           className="absolute right-0 p-2 bg-gray-200 rounded-full hover:bg-gray-300 hidden md:block"
+          aria-label="Next Team Member"
         >
-          ▶
+          <FaChevronRight />
         </button>
       </div>
     </section>

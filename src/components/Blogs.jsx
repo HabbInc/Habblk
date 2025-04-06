@@ -1,53 +1,54 @@
 import { useEffect, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { assets } from "../assets/assets";  // Import assets
 
 const events = [
   {
     title: "Team HABB at SLIIT! 🚀",
     description: "A productive discussion at SLIIT on our projects and growth!",
-    image: "/sliit_meetup.jpg",
+    image: assets.sliit_meetup,  // Use asset import
     link: "https://www.linkedin.com/company/habbinc",
   },
   {
     title: "Exciting Beginnings! 🚀",
     description: "Thrilled to announce the launch of HABB Software Company!",
-    image: "/sliit1.jpg",
+    image: assets.sliit1,  // Use asset import
     link: "https://www.facebook.com/habbinc",
   },
   {
     title: "Innovating at Northern Uni! 🚀",
     description: "Discussing HABB’s vision and future impact with aspiring minds!",
-    image: "/north1.jpg",
+    image: assets.north1,  // Use asset import
     link: "https://www.instagram.com/habb_inc",
   },
   {
     title: "Team HABB at SLIIT! 🚀",
     description: "A productive discussion at SLIIT on our projects and growth!",
-    image: "/sliitfeb3.jpg",
+    image: assets.sliitfeb3,  // Use asset import
     link: "https://www.linkedin.com/company/habbinc",
   },
   {
     title: "Building Our Future! 🚀",
     description: "Guidance & mentorship shaping our journey at HABB!",
-    image: "/sliit2.jpg",
+    image: assets.sliit2,  // Use asset import
     link: "https://www.twitter.com/habb_inc",
   },
   {
     title: "Team HABB at SLIIT! 🚀",
     description: "A productive discussion at SLIIT on our projects and growth!",
-    image: "/sliitfeb4.1.jpg",
+    image: assets.sliitfeb4_1,  // Use asset import
     link: "https://www.linkedin.com/company/habbinc",
   },
   {
     title: "Inspiring Collaboration! 🚀",
     description: "Exchanging ideas and pushing innovation forward!",
-    image: "/north2.jpg",
+    image: assets.north2,  // Use asset import
     link: "https://g.co/kgs/W1ugHxc",
   },
   {
     title: "HABB Inc 🚀",
     description: "Go Beyond!",
-    image: "/habb1.png",
+    image: assets.habb1,  // Use asset import
     link: "https://www.habb.lk",
   },
 ];

@@ -1,17 +1,17 @@
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { assets } from "../assets/assets";
 
 const images = [
   { src: assets.about },
-  { src: "/sliitfeb4.jpg" },
-  { src: "/sliitfeb1.jpg" },
-  { src: "/sliit0.jpg" },
-  { src: "/north11.jpg" },
-  { src: "/sliitfeb3.jpg" },
-  { src: "/sliitfeb2.jpg" },
-  { src: "/sliitfeb6.jpg" },
-  { src: "/north44.jpg" },
-  { src: "/sliitfeb5.jpg" },
+  { src: assets.sliitfeb4},
+  { src: assets.sliitfeb1 },
+  { src: assets.sliit0 },
+  { src: assets.north11},
+  { src: assets.sliitfeb3 },
+  { src: assets.sliitfeb2 },
+  { src: assets.sliitfeb6 },
+  { src: assets.north44 },
+  { src: assets.sliitfeb5 },
 ];
 
 const AboutUs = () => {
