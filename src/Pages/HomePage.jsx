@@ -15,6 +15,7 @@ function HomePage() {
       <Team />  {/* ✅ Display team section */}
       <Footer />  {/* ✅ Footer added */}
     </div>
+    
   );
 }
 
