@@ -60,10 +60,10 @@ const Navbar = () => {
           {/* HABB POS Link (New or Blinking) */}
           <li className="relative group cursor-pointer">
             <a
-              href="https://pos.habb.lk"
+              href="https://habblanka.com"
               className="text-red-600 font-semibold relative"
             >
-              HABB POS
+              .COM
               <span className="absolute left-0 bottom-[-8px] w-0 h-0.5 bg-red-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
             <span className="absolute animate-blink left-[-10px] top-[-10px] w-3 h-3 bg-red-600 rounded-full"></span>
@@ -119,10 +119,10 @@ const Navbar = () => {
           {/* HABB POS Link (Mobile) */}
           <li className="list-none relative group cursor-pointer">
             <a
-              href="https://pos.habb.lk"
+              href="https://habblanka.com"
               className="text-red-600 font-semibold relative"
             >
-              HABB POS
+              .COM
               <span className="absolute left-0 bottom-[-8px] w-0 h-0.5 bg-red-600 transition-all duration-300 group-hover:w-full"></span>
             </a>
             <span className="absolute animate-blink left-[-10px] top-[-10px] w-3 h-3 bg-red-600 rounded-full"></span>

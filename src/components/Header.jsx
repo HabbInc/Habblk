@@ -1,7 +1,6 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { assets } from "../assets/assets";
 import { FaPlay } from "react-icons/fa";
+import { assets } from "../assets/assets";
 
 const textVariants = {
   hidden: { opacity: 0, y: 10 },
@@ -99,7 +98,7 @@ const Header = () => {
 
               {/* New POS Link with Blinking Effect */}
               <motion.a
-                href="https://pos.habb.lk"
+                href="https://habblanka.com"
                 className="px-6 py-3 bg-red-500 text-white rounded-full font-semibold hover:bg-red-600 transition duration-300"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -108,7 +107,7 @@ const Header = () => {
                 }}
               >
                 <span className="relative">
-                  New POS
+                  .COM
                   <span className="absolute top-0 right-0 text-xs bg-yellow-400 text-black rounded-full w-4 h-4 flex items-center justify-center animate-ping">!</span>
                 </span>
               </motion.a>
