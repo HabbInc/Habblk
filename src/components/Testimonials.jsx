@@ -45,19 +45,35 @@ const testimonials = [
   },
   {
     id: 6,
-    name: "iTek Solutions, Australia",
-    image: assets.itek,
-    rating: 5,
-    review:
-      "iTek Solutions has been an invaluable partner, collaborating with us on various projects. Their expertise in technology and innovation has significantly contributed to our project's success and scalability.",
-  },
-  {
-    id: 7,
     name: "HiTech Creations",
     image: assets.hitech,
     rating: 5,
     review:
       "HABB revolutionized our operations with their AI-driven solutions, enhancing efficiency, streamlining processes, and boosting productivity. Their innovative approach has made a significant impact on our business, allowing us to make smarter, faster decisions.",
+  },
+  {
+    id: 7,
+    name: "Atlantic Ocean",
+    image: assets.atlantic, // Make sure you add `atlantic` image in assets
+    rating: 5,
+    review:
+      "Partnering with HABB was a turning point. Their creative designs and intuitive UI/UX transformed our digital presence. We received excellent support, timely delivery, and professional solutions that exceeded our expectations.",
+  },
+  {
+    id: 8,
+    name: "iTamil Foundation",
+    image: assets.itamilfoundation, // Add this image to assets too
+    rating: 5,
+    review:
+      "HABB helped us build a secure and modern platform to manage donations, events, and community outreach. Their compassionate collaboration and technical excellence brought our vision to life, empowering our mission.",
+  },
+  {
+    id: 9,
+    name: "iTamil News",
+    image: assets.itamilnews, // Add this image as well
+    rating: 5,
+    review:
+      "From real-time updates to responsive layouts, HABB’s team crafted an impressive news portal for us. The user experience is smooth across all devices, and the CMS integration makes it easy for our editors to manage content efficiently.",
   },
 ];
 

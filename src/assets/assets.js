@@ -1,25 +1,30 @@
 import about from './about.jpg'
+import atlantic from './atlantic.png'
 import bg from './bg.jpg'
-import girl from './girl.png'
-import hero from './hero.avif'
-import image from './image.png'
-import habb1 from './habb1.png'
-import hitech from './hitech.png'
 import client2 from './client-2.jpg'
 import client3 from './client-3.jpg'
+import girl from './girl.png'
+import habb1 from './habb1.png'
 import habb28 from './habb28.png'
 import habblogo from './habblogo.png'
 import habbpr from './habbpr.jpg'
+import hero from './hero.avif'
+import hitech from './hitech.png'
+import image from './image.png'
+import itamilfoundation from './itamilfoundation.png'
+import itamilnews from './itamilnews.png'
+import itek from './itek.jpg'
+import jb from './jb.jpg'
 import kajanthan from './kajanthan.png'
 import karunya from './karunya.png'
 import multivisa from './multivisa.png'
 import nipuni from './nipuni.png'
 import north0 from './north0.jpg'
 import north1 from './north1.jpg'
+import north11 from './north11.jpg'
 import north2 from './north2.jpg'
 import north3 from './north3.jpg'
 import north4 from './north4.jpg'
-import north11 from './north11.jpg'
 import north44 from './north44.jpg'
 import raj from './raj.png'
 import raj2 from './raj2.png'
@@ -27,9 +32,9 @@ import sanje from './sanje.png'
 import sarmitha from './sarmitha.png'
 import sentha from './sentha.png'
 import shiva from './shiva.png'
+import sliit0 from './sliit0.jpg'
 import sliit1 from './sliit1.jpg'
 import sliit2 from './sliit2.jpg'
-import sliit0 from './sliit0.jpg'
 import sliit_meetup from './sliit_meetup.jpg'
 import sliitfeb1 from './sliitfeb1.jpg'
 import sliitfeb2 from './sliitfeb2.jpg'
@@ -39,13 +44,12 @@ import sliitfeb4_1 from './sliitfeb4_1.jpg'
 import sliitfeb5 from './sliitfeb5.jpg'
 import sliitfeb6 from './sliitfeb6.jpg'
 import thanu from './thanu.png'
-import thenu from './thenu.png'
 import tharaa from './tharaa.png'
+import thenu from './thenu.png'
 import thulaxan from './thulaxan.png'
-import vithu from './vithu.png'
-import jb from './jb.jpg'
-import itek from './itek.jpg'
 import vb from './vb.jpg'
+import vithu from './vithu.png'
+
 
 export const assets = {
   about,
@@ -66,6 +70,9 @@ export const assets = {
   itek,
   jb,
   vb,
+  itamilnews,
+  itamilfoundation,
+  atlantic,
   nipuni,
   north0,
   north1,
