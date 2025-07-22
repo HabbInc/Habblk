@@ -49,6 +49,15 @@ import thenu from './thenu.png'
 import thulaxan from './thulaxan.png'
 import vb from './vb.jpg'
 import vithu from './vithu.png'
+import nira from './nira.png'
+import thiksi from './thiksi.png'
+import andrew from './andrew.png'
+import arthi from './arthi.png'
+import vanta1 from './vanta1.png'
+import vanta2 from './vanta2.png'
+import vanta3 from './vanta3.png'
+import vanta25 from './vanta25.jpg'
+import jaffna_meetup from './jaffna_meetup.jpg'
 
 
 export const assets = {
@@ -102,5 +111,14 @@ export const assets = {
   thenu,
   tharaa,
   thulaxan,
-  vithu
+  vithu,
+  nira,
+  andrew,
+  thiksi,
+  arthi,
+  vanta1,
+  vanta2,
+  vanta3,
+  vanta25,
+  jaffna_meetup
 }

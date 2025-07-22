@@ -55,7 +55,7 @@ const ContactUs = () => {
                 {
                   icon: "mdi:map-marker",
                   label: "Contact Location",
-                  value: "Colombo, Sri Lanka",
+                  value: "218 Brown Road, Jaffna 40000",
                 },
                 {
                   icon: "mdi:clock-time-four",

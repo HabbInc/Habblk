@@ -40,10 +40,16 @@ const teamMembers = [
     linkedin: "http://linkedin.com/in/rajpuvan",
   },
   {
-    name: "Ulageeswaran Kajanthan",
-    role: "Intern Software Engineer",
-    image: assets.kajanthan,
-    linkedin: "http://linkedin.com/in/kajanthu7",
+    name: "Andrew Asher",
+    role: "Product Manager AI",
+    image: assets.andrew,
+    linkedin: "http://linkedin.com/in/andrew-asher",
+  },
+  {
+    name: "Thiksiga Ragulakaran",
+    role: "Lead AI/ML R&D Engineer",
+    image: assets.thiksi,
+    linkedin: "https://www.linkedin.com/in/thiksiga-ragulakaran-619501202/",
   },
   {
     name: "Vithusa Pathmanathan",
@@ -52,22 +58,28 @@ const teamMembers = [
     linkedin: "http://linkedin.com/in/vithusha-pathmanathan-8b356828a",
   },
   {
-    name: "Nipuni Bandara",
-    role: "Intern Software Engineer",
-    image: assets.nipuni,
-    linkedin: "https://www.linkedin.com/in/nipuni-bandara-a84588277",
-  },
-  {
     name: "Sarmitha Suntharamoorthy",
     role: "Intern UI/UX Designer",
     image: assets.sarmitha,
     linkedin: "https://www.linkedin.com/in/sarmitha-suntharamoorthy-9541402b7/",
   },
   {
+    name: "Niranthari Mohanarajakumar",
+    role: "Project Manager",
+    image: assets.nira,
+    linkedin: "https://www.linkedin.com/in/niramohan",
+  },
+  {
     name: "Shivaphiriyan Arumugathash",
     role: "Intern Softeware Engineer",
     image: assets.shiva,
     linkedin: "https://www.linkedin.com/in/shivaphiriyan/",
+  },
+  {
+    name: "Anujeyan Arthigan",
+    role: "AI/ML Engineer",
+    image: assets.arthi,
+    linkedin: "https://www.linkedin.com/in/arthigan2020/",
   },
 ];
 
